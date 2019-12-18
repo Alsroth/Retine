@@ -1,9 +1,3 @@
-# Retine
-
-
-
-
-
 # Description : 
 
 Etude sur l'évolution de la couleur des yeux au cour du temps. Il a été étudié par exemple sur un échantillon homonègne de personnes au yeux bleu,marron et vert si au fur et à mesure des générations une couleur de yeux dominer.
