@@ -1,0 +1,158 @@
+\documentclass{beamer}
+
+
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+
+
+\usetheme{CambridgeUS}
+
+%\includegraphics{(nom de l'image)} pour insérer image .
+
+\title[Projet chromosome]{Rétine}
+\subtitle{L'évolution de la couleur des yeux .}
+\author{Abdallah,Lallis}
+\date{08/03/17}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \frametitle{Sommaire}
+  \tableofcontents[currentsection, hideothersubsections]
+  \end{frame} 
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Introduction}
+\subsection{Contexte}
+
+\begin{frame}
+\centering
+\includegraphics[scale=0.405]{Population.jpg} 
+\end{frame}
+
+\subsection{Problèmatique}
+
+\begin{frame}
+\begin{block}{} 
+Comment évoluent les proportions des couleurs des yeux au fil des générations dans une population?
+\end{block}
+\centering
+\includegraphics[scale=0.405]{Chat_bicolore.jpg}  % Fixe l'échelle
+\end{frame}
+
+\subsection{Questions scientifiques}
+
+\begin{frame}
+\begin{block}{} 
+\begin{itemize}
+\item Comment évolue le taux de chaque couleur au fil des générations? \newline
+\item Comment le taux de personnes au yeux bleu a t-il pu croître ?  \newline
+\item Est-ce qu'un gène peut disparaître ? 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Modélisation}
+\subsection{Préambule : l'hérédité de la couleur des yeux}
+
+\begin{frame}
+\includegraphics[scale=0.6]{AnnexeB.png}
+\end{frame}
+
+
+\begin{frame}
+\includegraphics[scale=0.405]{AnnexeA.png}
+\end{frame}
+
+
+\subsection{Hypothèses}
+
+
+\begin{frame}
+\begin{block}{} 
+\begin{enumerate}
+\item Si M > B alors \%M > \%B
+\item Le déplacement de population peut changer les proportions des couleurs. 
+\item L'homogamie permet d'augmenter le taux d'une couleur à caractère récessif.
+\item Un gène peut disparaître si sa proportion devient trop faible.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\subsection{Contexte de la modélisation}
+\begin{frame}
+\begin{block}{} 
+\begin{itemize}
+\item Modèle unisexe
+\item Nombre d'enfants aléatoire ou fixe
+\item Création d'échantillon précis ou global
+\item Homogamie 
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\subsection{Description du modèle}
+
+\begin{frame}
+\centering
+\includegraphics[scale=0.25]{AnnexeF.png}  % screen netlogo
+\end{frame}
+
+
+\section{Simulation}
+\subsection{Simulation\&Résultat}
+
+
+\begin{frame}
+%\begin{block}{} 
+%Sur un échantillon de 10000 individu , nous avons pris 10\% d'individu aux yeux bleu , 30\% %d'individu au yeux vert , 60\% d'individu aux yeux marron . Puis nous avons fait évoluer %l'échantillon sur 30 générations sans facteurs apparent.
+%\end{block}
+\centering
+\includegraphics[scale=0.5]{hyp1.png}
+\end{frame}
+
+
+\begin{frame}
+%\begin{block}{} 
+%Sur un échantillon de 10000 individu , nous avons pris deux population distincte et les avons réuni %pour simuler un déplacement de personne.
+%\end{block}
+\centering
+\includegraphics[scale=0.6]{hyp2.png}
+\end{frame}
+
+\begin{frame}
+%\begin{block}{} 
+%Sur un échantillon de 10000 individu , Nous pris 1\% de personne au yeux bleu et 99\% de personne au %yeux marron.Puis nous avons simuler 10 générations sans homogamie , 50 générations avec homogamie %deux fois d'affiler .
+%\end{block}
+\centering
+\includegraphics[scale=0.45]{hyp3.png}
+\end{frame}
+
+
+
+\subsection{Conclusion}
+
+\begin{frame}
+\begin{block}{} 
+\begin{itemize}
+\item Les proportions de couleurs ne varient pas au fil des générations sans l'influence d'autres facteurs.
+\item Le déplacement de population fait varier les taux en faveur des gènes dominants. 
+\item L'homogamie permet à un gène récessif de se développer plus vite.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+
+\end{document}
